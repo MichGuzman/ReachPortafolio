@@ -13,14 +13,14 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
-      setError('Todos los campos son obligatorios.');
+      setError('All fields are required.');
       return;
     }
     if (!validateEmail(formData.email)) {
-      setError('Ingresa un correo válido.');
+      setError('Enter a valid email address.');
       return;
     }
-    alert('Mensaje enviado.');
+    alert('Message sent.');
   };
 
   return (
