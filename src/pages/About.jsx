@@ -17,10 +17,14 @@ function About() {
         </div>
 
         <div className="certifications">
-          <h3>CERTIFICATIONS</h3>
-          <p><strong>SuiteLife: Demo and Delivery</strong> NetSuite</p>
-          <p><strong>NetSuite Certified ERP Consultant</strong> NetSuite</p>
-          <p><strong>Oracle Fusion Cloud Applications ERP Foundations Certified Associate</strong> Oracle</p>
+          <h3>NETSUITE CERTIFICATIONS</h3>
+          <p><strong>SuiteLife: Demo and Delivery</strong> </p>
+          <p><strong>NetSuite Certified ERP Consultant</strong> </p>
+          <p><strong>NetSuite Certified SuiteFoundation</strong> </p>
+          <p><strong>NetSuite Certified Administrator</strong> </p>
+          <p><strong>NetSuite Certified Financial User</strong> </p>
+          <h3>ORACLE CERTIFICATIONS</h3>
+          <p><strong>Oracle Fusion Cloud Applications ERP Foundations Certified Associate</strong> </p>
         </div>
 
         <div className="languages">

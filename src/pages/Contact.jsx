@@ -21,16 +21,51 @@ function Contact() {
       return;
     }
     alert('Message sent.');
+    // Here you can process the form (e.g., send data to API or email).
+    setFormData({ name: '', email: '', message: '' }); // Reset the form
+    setError(''); // Reset error message
   };
 
   return (
-    <section>
+    <section className="contact">
       <h2>Contact Me</h2>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input name="name" type="text" placeholder="Your Name" onChange={handleChange} />
-        <input name="email" type="email" placeholder="Your Email" onChange={handleChange} />
-        <textarea name="message" placeholder="Your Message" onChange={handleChange}></textarea>
+      {error && <p className="error">{error}</p>}
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            name="name"
+            type="text"
+            id="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
         <button type="submit">Send</button>
       </form>
     </section>

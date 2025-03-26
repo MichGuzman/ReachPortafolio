@@ -1,8 +1,9 @@
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const location = useLocation();
-  
+
   return (
     <header>
       <h1>MICHELLE GUZMAN</h1>

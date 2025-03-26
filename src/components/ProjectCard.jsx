@@ -1,15 +1,22 @@
-function ProjectCard({ title, image, link, repo }) {
-    return (
-      <div className="project-card">
-        <img src={image} alt={title} />
-        <h3>{title}</h3>
-        <div>
-          <a href={link} target="_blank" rel="noopener noreferrer">Live Demo</a>
-          <a href={repo} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+import React from 'react';
+
+function ProjectCard({ title, image, link, repo, showButtons }) {
+  return (
+    <div className="project-card">
+      <img src={image} alt={title} className="project-image" />
+      <h3>{title}</h3>
+      {showButtons && (
+        <div className="project-links">
+          <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
+            Modules
+          </a>
+          <a href={repo} target="_blank" rel="noopener noreferrer" className="project-link">
+            GitHub Repo
+          </a>
         </div>
-      </div>
-    );
-  }
-  
-  export default ProjectCard;
-  
+      )}
+    </div>
+  );
+}
+
+export default ProjectCard;
