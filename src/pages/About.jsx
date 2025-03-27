@@ -38,11 +38,14 @@ function About() {
           <ul>
             <li>Collaborated with customers and process owners in the requirements gathering phase for NetSuite implementation projects.</li>
             <li>Successfully implemented NetSuite integrations with other key business systems, enabling real-time data synchronization and eliminating data duplication.</li>
+            <li>Customized NetSuite by configuring custom forms, records, workflows, and fields to meet the specific needs of each client. Implemented effective integrations with other key systems, improving operational efficiency and real-time data visibility.</li>
           </ul>
           <p><strong>Senior Professional Consultant</strong> Netsoft, August 2012 - June 2021</p>
           <ul>
             <li>Analyzed areas of improvement and proposed customized solutions based on clients' specific requirements.</li>
             <li>Successfully customized NetSuite solutions to improve operational efficiency, and collaborated with clients to execute system implementations.</li>
+            <li>Developed customized NetSuite solutions to improve operational efficiency, after analyzing clients' business processes.</li>
+
           </ul>
         </div>
       </div>

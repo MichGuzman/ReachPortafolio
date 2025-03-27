@@ -15,13 +15,13 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+main {
+  flex-grow: 1;
 }
+
 
 /* Home Section */
 .home {
@@ -29,14 +29,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
   text-align: center;
   flex-direction: column;
   position: relative;
   background-size: cover;
   background-position: center;
 }
-
 
 .home-content {
   background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
@@ -61,7 +60,7 @@ a {
 }
 
 .cta-button {
-  background-color: #ff9900; /* Color brillante para el botón */
+  background-color: #ff9900; 
   color: white;
   padding: 12px 25px;
   font-size: 18px;
@@ -99,7 +98,6 @@ a {
   border-radius: 50%;
   z-index: -1;
 }
-
 
 /* Header */
 header {
@@ -147,7 +145,7 @@ header nav ul li a:hover {
   background-color: #f4f4f9;
   color: #333;
   padding: 40px 20px;
-  margin-top: 120px; /* Ajuste para que no se superponga con el navbar */
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,10 +404,10 @@ header nav ul li a:hover {
 /* Portfolio Section */
 .project-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas para los proyectos */
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto; /* Agregando espacio para evitar que el contenido quede pegado a la parte superior */
 }
 
 .project-card {
@@ -505,25 +503,6 @@ header nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  width: 100%;
-  margin-top: auto; /* Esto asegura que el footer se quede en la parte inferior */
-}
-
-footer a {
-  color: #f4f4f9;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 
 /* Social Links */
 .social-links {
@@ -549,4 +528,25 @@ footer a:hover {
 
 .social-icon-img:hover {
   transform: scale(1.2); /* Aumenta ligeramente de tamaño al pasar el ratón */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Esto asegura que el footer esté al final */
+  position: fixed;
+  bottom: 0; /* Lo fija en la parte inferior de la pantalla */
+}
+
+footer a {
+  color: #f4f4f9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

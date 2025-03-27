@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 
 const netsuiteProjects = [
-  { title: "Experience Areas", image: "", link: "#", repo: "#", showButtons: true },
+  { title: "Experience Areas", image: "oracle.png", link: "#", repo: "#", showButtons: true },
 ];
 
 const featuredProjects = [
   { title: "Toyota Panama - Ricardo Perez, S.A", image: "ricardoperez.png", link: "#", repo: "#", showButtons: false },
   { title: "Farmalisto", image: "farmalisto.png", link: "#", repo: "#", showButtons: false },
   { title: "Body Art Alliance", image: "baa.png", link: "#", repo: "#", showButtons: false },
+  { title: "BayWa r.e. MX", image: "baywa.png", link: "#", repo: "#", showButtons: false },
+  { title: "ProEdge Dental Water Labs", image: "proedge.png", link: "#", repo: "#", showButtons: false },
+  { title: "Aspen Publishing", image: "aspen.png", link: "#", repo: "#", showButtons: false },
 ];
 
 const codingProjects = [
@@ -16,18 +19,17 @@ const codingProjects = [
 ];
 
 function Portfolio() {
-  const [showFeatured, setShowFeatured] = useState(false);
+  const [showFeatured, setShowFeatured] = useState(false); // Estado para controlar la visibilidad de Proyectos Destacados
 
-  // Función para manejar el clic en GitHub Repo
-  const handleGitHubClick = () => {
-    setShowFeatured(true); // Muestra los proyectos destacados
+  const toggleFeatured = () => {
+    setShowFeatured(!showFeatured); // Cambia la visibilidad al hacer clic
   };
 
   return (
     <section>
-      <h2>My Work</h2>
+      <h2>PROFESSIONAL EXPERIENCE</h2>
 
-      {/* NetSuite Projects */}
+      {/* NetSuite Section */}
       <div className="section-container">
         <h3>NetSuite Projects</h3>
         <div className="project-list">
@@ -37,26 +39,24 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Proyectos Destacados */}
+      {/* Ver Proyectos Destacados Button */}
+      <button onClick={toggleFeatured} className="cta-button">
+        {showFeatured ? 'Close Featured Projects' : 'See Featured Projects'}
+      </button>
+
+      {/* Featured Projects Section */}
       {showFeatured && (
         <div className="section-container">
-          <h3>Proyectos Destacados</h3>
+          <h3>Featured Projects</h3>
           <div className="project-list">
             {featuredProjects.map((project, index) => (
-              <ProjectCard key={index} {...project} showButtons={false} />
+              <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
       )}
 
-      {/* Cuando el usuario hace clic en GitHub, mostramos la sección de proyectos destacados */}
-      {!showFeatured && (
-        <button onClick={handleGitHubClick} className="cta-button">
-          Ver Proyectos Destacados
-        </button>
-      )}
-
-      {/* Coding Projects */}
+      {/* Coding Section */}
       <div className="section-container">
         <h3>Coding Projects</h3>
         <div className="project-list">

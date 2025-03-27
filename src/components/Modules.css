@@ -1,0 +1,44 @@
+/* Styles for the Modules Section */
+.modules {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 100px; /* Adjust if necessary */
+    text-align: center;
+  }
+  
+  .modules h2 {
+    font-size: 48px; /* Larger size for the title */
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .modules table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no extra spaces between cells */
+    margin-top: 20px;
+  }
+  
+  .modules th, .modules td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Table borders */
+    text-align: left;
+  }
+  
+  .modules th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .modules tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+  }
+  
+  tr {
+    cursor: pointer;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
