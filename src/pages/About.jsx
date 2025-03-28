@@ -1,3 +1,4 @@
+import '../styles/About.css'; // Para la página About
 function About() {
   return (
     <section className="about-me">

@@ -7,103 +7,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f1f1f1;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-}
-
-main {
-  flex-grow: 1;
-}
-
-
-/* Home Section */
-.home {
-  background-color: #eae7e4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  flex-direction: column;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-.home-content {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 800px;
-  text-align: center;
-}
-
-.home h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #003366; /* Color del texto similar al de la imagen */
-  margin-bottom: 20px;
-}
-
-.home p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background-color: #ff9900; 
-  color: white;
-  padding: 12px 25px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.cta-button:hover {
-  background-color: #e68a00; /* Color ligeramente más oscuro para el hover */
-}
-
-.home:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  background-color: #ff9900; /* Detalles gráficos */
-  border-radius: 50%;
-  z-index: -1; /* Asegura que no interfiera con el contenido */
-}
-
-.home:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  background-color: #ff9900;
-  border-radius: 50%;
-  z-index: -1;
-}
-
 /* Header */
 header {
-  background-color: #003366;
+  font-family: 'Avenir', sans-serif;
+  background-color: #0F1C30;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-align: right;
   position: fixed;
   width: 100%;
@@ -112,7 +21,7 @@ header {
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
@@ -136,16 +45,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: #575757;
+  background-color: #DED7C9;
   border-radius: 4px;
 }
 
 /* Resume Section */
 .resume {
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 40px 20px;
-  margin-top: 100px;
+  padding: 100px 100px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,356 +60,23 @@ header nav ul li a:hover {
 }
 
 .resume h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
-  color: #003366;
+  color: #2f3e44;
   margin-bottom: 20px;
 }
 
 .resume a {
   display: inline-block;
   font-size: 18px;
-  background-color: #0066cc;
+  background-color: #668dc0;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 20px;
+  transition: transform 0.2s ease;
 }
-
-.resume a:hover {
-  background-color: #00509e;
-}
-
-.resume h3 {
-  font-size: 24px;
-  color: #003366;
-  margin-top: 40px;
-}
-
-.resume ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.resume ul li {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 10px;
-}
-
-/* About Me Section */
-.about-me {
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 40px 20px;
-  margin-top: 120px; /* Ajuste para que no se superponga con el navbar */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.about-header h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #003366;
-}
-
-.about-header img {
-  max-width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 3px solid #003366;
-}
-
-.about-me p {
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  padding: 0 20px;
-  color: #333;
-  text-align: center;
-  font-style: italic;
-}
-
-/* Education, Certifications, Professional Experience */
-.about-info {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 40px;
-  text-align: left;
-}
-
-.about-info h3 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #003366;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 5px;
-  margin-top: 20px;
-}
-
-.about-info p,
-.about-info ul {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.about-info ul {
-  margin-left: 20px;
-}
-
-.about-info strong {
-  font-weight: bold;
-}
-
-.languages p,
-.certifications p,
-.education p {
-  margin-bottom: 10px;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #0066cc;
-  color: white;
-  padding: 100px 20px 50px;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-top: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero button {
-  background-color: #fff;
-  color: #0066cc;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background-color: #0066cc;
-  color: white;
-}
-
-/* Section Titles (Horizontal blue background with white text) */
-.section-title-container {
-  background-color: #003366;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  margin-top: 70px;
-}
-
-.section-title-container div {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.section-title-container div:hover {
-  background-color: #00509e;
-  border-radius: 4px;
-}
-
-/* Contact Section */
-.contact {
-  background-color: #f4f4f9;
-  padding: 40px 20px;
-  margin-top: 120px; /* Ajuste para que no se superponga con el navbar */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #003366;
-  margin-bottom: 20px;
-}
-
-.contact-form {
-  width: 100%;
-  max-width: 600px;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-form .form-group label {
-  display: block;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.contact-form .form-group textarea {
-  height: 150px;
-}
-
-.contact-form button {
-  background-color: #0066cc;
-  color: white;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.contact-form button:hover {
-  background-color: #00509e;
-}
-
-.contact .error {
-  color: red;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-/* Portfolio Section */
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 80px auto; /* Agregando espacio para evitar que el contenido quede pegado a la parte superior */
-}
-
-.project-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-image {
-  width: 80%;
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.project-links {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-}
-
-.project-link {
-  background-color: #0066cc;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-  background-color: #00509e;
-}
-
-.project-list .project-card:nth-child(1) {
-  grid-column: span 2; /* Hace que el primer proyecto ocupe toda la fila */
-}
-
-/* Sección general para las secciones de NetSuite y Coding */
-.section-container {
-  margin-top: 40px;
-}
-
-.section-container h3 {
-  font-size: 30px;
-  color: #003366;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-/* Estilos para el listado de proyectos */
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-.modules {
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 40px 20px;
-  margin-top: 120px; /* Ajuste para que no se superponga con el navbar */
-  text-align: center;
-}
-
-.modules h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #003366;
-  margin-bottom: 20px;
-}
-
-.modules ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.modules ul li {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 10px;
-}
-
 
 /* Social Links */
 .social-links {
@@ -514,37 +88,32 @@ header nav ul li a:hover {
 
 .social-icon {
   display: inline-block;
-  width: 30px; /* Tamaño más pequeño para los íconos */
+  width: 30px; 
   height: 30px;
   text-align: center;
 }
 
 .social-icon-img {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-  height: 100%; /* La altura se ajusta proporcionalmente */
-  object-fit: cover; /* Mantiene las proporciones de la imagen */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
   transition: transform 0.3s ease; /* Efecto suave al pasar el ratón */
 }
 
 .social-icon-img:hover {
-  transform: scale(1.2); /* Aumenta ligeramente de tamaño al pasar el ratón */
+  transform: scale(2); /* Aumenta ligeramente de tamaño al pasar el ratón */
 }
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #0F1C30;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
-  margin-top: auto; /* Esto asegura que el footer esté al final */
+  margin-top: auto;
   position: fixed;
-  bottom: 0; /* Lo fija en la parte inferior de la pantalla */
-}
-
-footer a {
-  color: #f4f4f9;
-  text-decoration: none;
+  bottom: 0; 
 }
 
 footer a:hover {

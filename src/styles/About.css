@@ -1,0 +1,78 @@
+/* About Me Section */
+.about-me {
+  background-color: #F5F5F5;
+  color: #333;
+  padding: 40px 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto; /* Permite el desplazamiento si el contenido se desborda */
+  max-height: calc(100vh - 100px); /* Asegura que el contenedor no se desborde fuera de la pantalla */
+}
+
+.about-header h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.about-header img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #003366;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  color: #333;
+  text-align: center;
+  font-style: italic;
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+  white-space: pre-wrap; /* Mantiene los saltos de línea en el texto */
+}
+
+/* Education, Certifications, Professional Experience */
+.about-info {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.about-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.about-info p,
+.about-info ul {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-info ul {
+  margin-left: 20px;
+}
+
+.about-info strong {
+  font-weight: bold;
+}
+
+.languages p,
+.certifications p,
+.education p {
+  margin-bottom: 10px;
+}

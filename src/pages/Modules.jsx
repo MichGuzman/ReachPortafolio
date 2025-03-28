@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/Modules.css'; 
+import '../styles/Modules.css'; 
 
 function Modules() {
   // Definimos un estado para controlar la visibilidad de las descripciones

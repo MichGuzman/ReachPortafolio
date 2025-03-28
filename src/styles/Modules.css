@@ -3,20 +3,20 @@
     background-color: #f4f4f9;
     color: #333;
     padding: 40px 20px;
-    margin-top: 100px; /* Adjust if necessary */
+    margin-top: 10px;
     text-align: center;
   }
   
   .modules h2 {
-    font-size: 48px; /* Larger size for the title */
+    font-size: 48px;
     font-weight: bold;
     color: #003366;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .modules table {
     width: 100%;
-    border-collapse: collapse; /* Ensures no extra spaces between cells */
+    border-collapse: collapse; 
     margin-top: 20px;
   }
   
@@ -27,7 +27,7 @@
   }
   
   .modules th {
-    background-color: #003366;
+    background-color: #0F1C30;
     color: white;
   }
   

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import '../styles/Portfolio.css'; 
 
 const netsuiteProjects = [
   { title: "Experience Areas", image: "oracle.png", link: "#", repo: "#", showButtons: true },
@@ -15,7 +16,7 @@ const featuredProjects = [
 ];
 
 const codingProjects = [
-  { title: "Bootcamp Coding", image: "bootcamp.png", link: "#", repo: "#", showButtons: true },
+  { title: "Bootcamp Coding", image: "bootcamp.png", link: "#", repo: "https://github.com/MichGuzman", showButtons: true },
 ];
 
 function Portfolio() {
@@ -27,11 +28,8 @@ function Portfolio() {
 
   return (
     <section>
-      <h2>PROFESSIONAL EXPERIENCE</h2>
-
-      {/* NetSuite Section */}
       <div className="section-container">
-        <h3>NetSuite Projects</h3>
+      <h2>PROFESSIONAL EXPERIENCE</h2>
         <div className="project-list">
           {netsuiteProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />
@@ -39,12 +37,10 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Ver Proyectos Destacados Button */}
       <button onClick={toggleFeatured} className="cta-button">
         {showFeatured ? 'Close Featured Projects' : 'See Featured Projects'}
       </button>
 
-      {/* Featured Projects Section */}
       {showFeatured && (
         <div className="section-container">
           <h3>Featured Projects</h3>
@@ -56,7 +52,6 @@ function Portfolio() {
         </div>
       )}
 
-      {/* Coding Section */}
       <div className="section-container">
         <h3>Coding Projects</h3>
         <div className="project-list">

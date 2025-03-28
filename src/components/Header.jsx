@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header>
-      <h1>MICHELLE GUZMAN</h1>
+      <h1>MICHELLE GUZMAN PORTFOLIO</h1>
       <nav>
         <ul>
           <li className={location.pathname === '/' ? 'active' : ''}>

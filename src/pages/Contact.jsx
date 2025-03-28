@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import React from 'react';
+import '../styles/Contact.css';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -21,7 +23,6 @@ function Contact() {
       return;
     }
     alert('Message sent.');
-    // Here you can process the form (e.g., send data to API or email).
     setFormData({ name: '', email: '', message: '' }); // Reset the form
     setError(''); // Reset error message
   };
