@@ -12,8 +12,8 @@ It uses **React Router** for navigation between components and is deployed on **
 - React Router DOM
 - HTML5 & CSS3
 - JavaScript (ES6+)
-- Netlify for deployment
-- [Optional: Any additional libraries used]
+- Render
+
 
 ## Screenshot
 
