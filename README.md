@@ -2,7 +2,7 @@
 
 ## Description
 
-[Project Name] is a **React** application that offers an intuitive interface to display personal and professional information. The app includes **About Me**, **Portfolio**, **Contact**, and **Resume** sections and is designed to showcase featured projects and provide a way for professional contact.
+[PORTFOLIO] is a **React** application that offers an intuitive interface to display personal and professional information. The app includes **About Me**, **Portfolio**, **Contact**, and **Resume** sections and is designed to showcase featured projects and provide a way for professional contact.
 
 It uses **React Router** for navigation between components and is deployed on **Netlify**.
 
