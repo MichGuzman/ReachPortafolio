@@ -8,7 +8,6 @@ const netsuiteProjects = [
 
 const featuredProjects = [
   { title: "Toyota Panama - Ricardo Perez, S.A", image: "ricardoperez.png", link: "#", repo: "#", showButtons: false },
-  { title: "Farmalisto", image: "farmalisto.png", link: "#", repo: "#", showButtons: false },
   { title: "Body Art Alliance", image: "baa.png", link: "#", repo: "#", showButtons: false },
   { title: "BayWa r.e. MX", image: "baywa.png", link: "#", repo: "#", showButtons: false },
   { title: "ProEdge Dental Water Labs", image: "proedge.png", link: "#", repo: "#", showButtons: false },
@@ -16,8 +15,13 @@ const featuredProjects = [
 ];
 
 const codingProjects = [
-  { title: "Bootcamp Coding", image: "bootcamp.png", link: "#", repo: "https://github.com/MichGuzman", showButtons: true },
+  { title: "Bootcamp Coding", image: "bootcamp.png", link: "#", repo: "https://github.com/MichGuzman", showButtons: true, type: "coding" },
+  { title: "Employee Manager", image: "employemang.png", link: "#", repo: "https://github.com/MichGuzman/EmployeeManagement/tree/main/Company%20Query", showButtons: true, type: "coding" },
+  { title: "Vehicle Builder", image: "vehicle.png", link: "#", repo: "https://github.com/MichGuzman/VehicleBuilder", showButtons: true, type: "coding" },
+  { title: "Readme Generator", image: "readme.png", link: "#", repo: "https://github.com/MichGuzman/readme-generator", showButtons: true, type: "coding" },
+  { title: "Portfolio", image: "portfolio.png", link: "#", repo: "https://github.com/MichGuzman/ReachPortafolio", showButtons: true, type: "coding" },
 ];
+
 
 function Portfolio() {
   const [showFeatured, setShowFeatured] = useState(false); // Estado para controlar la visibilidad de Proyectos Destacados
